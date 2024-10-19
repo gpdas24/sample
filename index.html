@@ -176,46 +176,64 @@
     }
 
     /* Footer */
-    .footer {
+    footer {
       background-color: #055b86;
       color: white;
       padding: 40px 0;
     }
-
     .footer h5 {
       color: white;
     }
-
     .footer ul {
       list-style-type: none;
       padding: 0;
     }
-
     .footer ul li {
       margin-bottom: 10px;
     }
-
-    .footer a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .social-icons {
+    .footer .social-icons {
       display: flex;
       gap: 10px;
       margin-top: 20px;
-    }
+  }
 
-    .social-icons a {
+  .footer .social-icons a {
+      text-decoration: none;
       color: white;
       font-size: 1.5em;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+  }
+  .social-icons a:hover {
+    color: #000000;
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+ 
+   
+        .carousel-item img {
+          height: 200px;
+          object-fit: cover;
+        }
+      
+        .row.g-0 { /* Removes the gutter (space) between columns */
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+        .col-4 {
+          padding-left: 0;
+          padding-right: 0;
+        }
 
-    .social-icons a:hover {
-      color: #000000;
-      transform: translateY(-10px);
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    .footer a{
+      text-decoration: none;
+    }
+    .tick{
+      
+      color: #055b86;
+    }
+    .footer{
+      padding-bottom: 0% !important;
     }
 
     /* Responsive Design */
@@ -373,44 +391,104 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+<footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5>Company</h5>
+        <!-- Company Info -->
+        <div class="col-md-4 mb-4">
+          <h5>RouteX</h5>
+          <p>Corporate business typically refers to large-scale enterprises or organizations. Stay connected with us on social media.</p>
+          <div class="social-icons text-white">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        </div>
+  
+        <!-- Service Menu -->
+        <div class="col-md-2 mb-4">
+          <h5>Service Menu</h5>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
+            <li> <a href="#" class="text-white">&#10003; Mistakes To Avoid</a> </li>
+            <li> <a href="#" class="text-white">&#10003; Your Startup</a> </li>
+            <li> <a href="#" class="text-white">&#10003; Know About Fonts</a> </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="#">Visa Assistance</a></li>
-            <li><a href="#">Travel Insurance</a></li>
-            <li><a href="#">Destination Guides</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-4">
+  
+        <!-- Useful Links -->
+        <div class="col-md-2 mb-4">
           <h5>Useful Links</h5>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li> <a href="#" class="text-white">Latest News</a> </li>
+            <li> <a href="#" class="text-white">Careers</a> </li>
+            <li> <a href="#" class="text-white">General Inquiries</a> </li>
+            <li> <a href="#" class="text-white">Case Studies</a> </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <h5>Follow Us</h5>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  
+        <!-- Gallery -->
+        <!-- Gallery -->
+  
+  
+        <div class="col-md-4 mb-4">
+          <h5>Gallery</h5>
+          <div class="row gallery">
+          
+          <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="image/g1.png" style="height: 100px;" alt="Gallery Image 1" class="img-fluid">
+                  </div>
+                  <div class="col-4">
+                    <img src="image/g2.png" style="height: 100px;" alt="Gallery Image 2" class="img-fluid">
+                  </div>
+                  <div class="col-4">
+                    <img src="image/g3.png"  style="height: 100px;"alt="Gallery Image 3" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="image/g4.png" style="height: 100px;" alt="Gallery Image 4" class="img-fluid">
+                  </div>
+                  <div class="col-4">
+                    <img src="image/g5.png" style="height: 100px;" alt="Gallery Image 5" class="img-fluid">
+                  </div>
+                  <div class="col-4">
+                    <img src="image/g6.png" style="height: 100px;" alt="Gallery Image 6" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <!-- Add more carousel items as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#galleryCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
           </div>
         </div>
+      
+  
       </div>
-    </div>
+      <hr>
+      <!-- Bottom Links -->
+      <div class="last d-flex justify-content-between pt-4 pb-1 flex-column flex-sm-row">
+        <p>&copy;  2024 RouteX All Rights Reserved</p>
+        <ul class="list-inline d-flex flex-column flex-sm-row">
+          <li class="list-inline-item"><a href="#" class="text-white">Terms & Conditions</a></li>
+          <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      
   </footer>
 
   <!-- Bootstrap JS -->
