@@ -103,17 +103,25 @@
       font-weight: 700;
     }
 
-    .hero-section .btn-learn-more {
-      background-color: #055b86;
-      color: white;
-      border-radius: 30px;
-      transition: background-color 0.3s ease;
-    }
+    .btn-consistent,
+    .btn-read-more {
+    background-color: #055b86; /* Primary button color */
+    color: white; /* Text color */
+    padding: 0.75rem 1.5rem; /* Adjust padding for larger click area */
+    font-size: 1rem; /* Ensure readable text */
+    border-radius:30px; /* Rounded edges for a modern look */
+    transition: all 0.3s ease;
+    width: 100%; /* Default full width on small screens */
+    max-width: 200px; /* Limit button width on larger screens */
+}
 
-    .hero-section .btn-learn-more:hover {
-      background-color: #02334b;
-    }
-
+/* Button Hover Effect */
+    .btn-consistent:hover,
+    .btn-read-more:hover {
+    background-color: #0a6fa3; /* Darker shade for hover */
+    color: #fff; /* Contrast text color */
+    transform: translateY(-2px); /* Slight lift effect */
+}
     /* About Section */
     .about-us h4 {
       color: #03405e;
@@ -207,13 +215,13 @@
       margin-top: 20px;
   }
 
-  .footer .social-icons a {
+    .footer .social-icons a {
       text-decoration: none;
       color: white;
       font-size: 1.5em;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  .social-icons a:hover {
+    .social-icons a:hover {
     color: #000000;
     transform: translateY(-10px);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
@@ -247,10 +255,10 @@
     }
         /* Animation for Service Menu and Useful Links */
     .footer .col-md-2 ul li a {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: white;
+     position: relative;
+     display: inline-block;
+     text-decoration: none;
+     color: white;
 }
 
 .footer .col-md-2 ul li a::after {
@@ -294,9 +302,9 @@
         font-size: 0.9rem;
       }
 
-      .about-us .btn-read-more {
-        font-size: 0.9rem;
-        padding: 6px 18px;
+      .btn-consistent,
+      .btn-read-more {
+          padding: 0.8rem 2rem; /* Increase padding on larger screens */
       }
     }
 
@@ -313,10 +321,11 @@
         font-size: 0.8rem;
       }
 
-      .about-us .btn-read-more {
-        font-size: 0.8rem;
-        padding: 4px 15px;
-      }
+      .btn-consistent,
+      .btn-read-more {
+        font-size: 1.1rem; /* Increase font size on larger screens */
+        width: auto; /* Adjust to content width */
+    }
 
       .service-section {
         padding: 30px 0;
@@ -336,7 +345,8 @@
         font-size: 0.75rem;
       }
 
-      .about-us .btn-read-more {
+      .btn-consistent,
+      .btn-read-more {
         font-size: 0.7rem;
         padding: 4px 12px;
       }
@@ -408,34 +418,7 @@
     </div>
   </section>
 
-  <!-- Services Section
-  <section class="service-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-box text-center p-4">
-            <img src="image/fd.png" class="mb-3" alt="Service Icon" width="50">
-            <h5>Best Food Destinations</h5>
-            <p>Discover the best food spots around the world, curated by RouteX experts.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-box text-center p-4">
-            <img src="image/loc.png" class="mb-3" alt="Service Icon" width="50">
-            <h5>Best Travel Locations</h5>
-            <p>Explore the top travel locations with personalized recommendations.</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="service-box text-center p-4">
-            <img src="image/cal.png" class="mb-3" alt="Service Icon" width="50">
-            <h5>Custom Travel Calendar</h5>
-            <p>Create your custom travel itinerary with our easy-to-use tools.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
+ 
   <section class="service-section">
     <div class="container">
       <h5 class="text-uppercase mb-3">Our Services</h5>
